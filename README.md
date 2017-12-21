@@ -1,3 +1,8 @@
+The main development repository is at https://github.com/KOBUGE-Incubator/ringed. This is just for 
+my use in reskinning the game for a new project. If I change anything technical then I'll push it
+on the main branch.
+
+
 # Ringed
 ![](icon.png) 
 
