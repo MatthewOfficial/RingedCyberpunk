@@ -50,7 +50,7 @@
 			<array  len="14" shared="false">
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 5.00248, -0, 0, 1, -0.0170193, 0 </matrix32>
+				<matrix32> 5.00248, 0, 0, 1, -0.0170193, 0 </matrix32>
 				<int> 1 </int>
 				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
