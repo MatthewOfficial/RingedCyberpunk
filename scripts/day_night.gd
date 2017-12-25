@@ -4,7 +4,8 @@ var hour # The hour that the class has
 var minutes # The minutes that the class has 
 var modulate_day # The CanvasModulate node that was passed to the class
 var day_atenuation # The atenuation value used in modulate_day node (R,G,B)
-var max_illumination = 1.0 # The max value that we can pass to the day_atenuation (RGB) 1.0 is actually the max
+var max_illumination = 0.0 # The max value that we can pass to the day_atenuation (RGB) 1.0 is actually the max
+#Cyberpunk: max_illumination to 1.0 if you want day/night cycles back
 var min_illumination = 0.0 # The min value that we can pass to the day_atenuation (RGB) 0.0 is actually the min
 var day = 0 # This will be +1 each time the clock pass from 23:59 to 00:00
 var day_time = { # The time of the day (like we talk)
