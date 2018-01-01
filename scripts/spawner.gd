@@ -9,7 +9,7 @@ var area
 func _ready():
 	area = get_node("Area2D")
 	
-	time_left = cooldown
+	time_left = 5
 	
 	set_fixed_process(true)
 
