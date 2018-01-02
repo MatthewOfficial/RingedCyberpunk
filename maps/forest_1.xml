@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="7" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
-	<ext_resource path="res://scenes/spawner.xml" type="PackedScene" index="3"></ext_resource>
-	<ext_resource path="res://scenes/rock_1.xml" type="PackedScene" index="0"></ext_resource>
-	<ext_resource path="res://scenes/enemy_kamikaze.xml" type="PackedScene" index="5"></ext_resource>
-	<ext_resource path="res://scenes/enemy_1.xml" type="PackedScene" index="4"></ext_resource>
-	<ext_resource path="res://scenes/crate.xml" type="PackedScene" index="1"></ext_resource>
-	<ext_resource path="res://scenes/tree.xml" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://scenes/spawner.xml" type="PackedScene" index="3">
+	</ext_resource>
+	<ext_resource path="res://scenes/rock_1.xml" type="PackedScene" index="0">
+	</ext_resource>
+	<ext_resource path="res://scenes/enemy_kamikaze.xml" type="PackedScene" index="5">
+	</ext_resource>
+	<ext_resource path="res://scenes/enemy_1.xml" type="PackedScene" index="4">
+	</ext_resource>
+	<ext_resource path="res://scenes/crate.xml" type="PackedScene" index="1">
+	</ext_resource>
+	<ext_resource path="res://scenes/tree.xml" type="PackedScene" index="2">
+	</ext_resource>
 	<main_resource>
+
+
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
 			<int> 0 </int>
