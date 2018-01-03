@@ -1,93 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="8" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
-	<ext_resource path="res://scripts/end.gd" type="Script" index="2"></ext_resource>
-	<ext_resource path="res://scenes/ender.xml" type="PackedScene" index="1"></ext_resource>
-	<ext_resource path="res://scenes/spawner.xml" type="PackedScene" index="5"></ext_resource>
-	<ext_resource path="res://scenes/wall_corner.xml" type="PackedScene" index="4"></ext_resource>
-	<ext_resource path="res://scenes/crate.xml" type="PackedScene" index="0"></ext_resource>
-	<ext_resource path="res://scenes/wall.xml" type="PackedScene" index="3"></ext_resource>
-	<ext_resource path="res://scenes/enemy_kamikaze.xml" type="PackedScene" index="6"></ext_resource>
+<resource_file type="PackedScene" subresource_count="5" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
+	<ext_resource path="res://scenes/wall.xml" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://scenes/wall_corner.xml" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://scenes/active_console.xml" type="PackedScene" index="0"></ext_resource>
+	<ext_resource path="res://scripts/timer.gd" type="Script" index="1"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 0 </int>
+			<int> 2 </int>
 			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<int_array  len="12"> 				3, 4, 28, 27, 6, 0, 4, 3, 30, 29, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="34">
+			<string_array  len="31">
 				<string> "Map" </string>
 				<string> "__meta__" </string>
 				<string> "Node2D" </string>
 				<string> "Crates" </string>
-				<string> "crate" </string>
-				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "crate7" </string>
-				<string> "crate1" </string>
-				<string> "crate2" </string>
-				<string> "crate5" </string>
-				<string> "crate3" </string>
-				<string> "crate6" </string>
-				<string> "crate4" </string>
-				<string> "crate8" </string>
 				<string> "Misc" </string>
-				<string> "ender" </string>
+				<string> "active_console" </string>
+				<string> "Timer" </string>
+				<string> "process_mode" </string>
+				<string> "wait_time" </string>
+				<string> "one_shot" </string>
+				<string> "autostart" </string>
 				<string> "script/script" </string>
-				<string> "cooldown" </string>
 				<string> "Spawn" </string>
+				<string> "transform/pos" </string>
 				<string> "transform/scale" </string>
 				<string> "Position2D" </string>
 				<string> "Walls" </string>
 				<string> "Wall" </string>
 				<string> "Wall3" </string>
 				<string> "90Wall" </string>
+				<string> "transform/rot" </string>
 				<string> "90Wall1" </string>
 				<string> "Wall1" </string>
 				<string> "Wall2" </string>
 				<string> "WallCorner" </string>
 				<string> "WallCorner1" </string>
 				<string> "Enemies" </string>
-				<string> "spawner" </string>
-				<string> "object_scene" </string>
+				<string> "_on_active_console_console_active" </string>
+				<string> "console_active" </string>
+				<string> "_on_Timer_timeout" </string>
+				<string> "timeout" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 25 </int>
+			<int> 16 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="251"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 2, 3, -1, 0, 0, 1, 0, 2147483647, 4, 1, 2, 5, 2, 6, 3, 0, 1, 0, 2147483647, 7, 1, 2, 5, 4, 6, 3, 0, 1, 0, 2147483647, 8, 1, 2, 5, 5, 6, 6, 0, 1, 0, 2147483647, 9, 1, 2, 5, 7, 6, 8, 0, 1, 0, 2147483647, 10, 1, 2, 5, 9, 6, 8, 0, 1, 0, 2147483647, 11, 1, 2, 5, 10, 6, 11, 0, 1, 0, 2147483647, 12, 1, 2, 5, 12, 6, 11, 0, 1, 0, 2147483647, 13, 1, 2, 5, 13, 6, 14, 0, 1, 0, 2147483647, 14, 1, 2, 5, 15, 6, 14, 0, 0, 0, 2, 15, -1, 0, 0, 11, 0, 2147483647, 16, 16, 3, 5, 17, 17, 18, 18, 19, 0, 0, 0, 21, 19, -1, 2, 5, 20, 20, 21, 0, 0, 0, 2, 22, -1, 0, 0, 14, 0, 2147483647, 23, 22, 1, 5, 23, 0, 14, 0, 2147483647, 24, 22, 1, 5, 24, 0, 14, 0, 2147483647, 25, 22, 2, 5, 25, 6, 26, 0, 14, 0, 2147483647, 26, 22, 2, 5, 27, 6, 26, 0, 14, 0, 2147483647, 27, 22, 1, 5, 28, 0, 14, 0, 2147483647, 28, 22, 1, 5, 29, 0, 14, 0, 2147483647, 29, 30, 1, 5, 31, 0, 14, 0, 2147483647, 30, 30, 2, 5, 32, 6, 33, 0, 0, 0, 2, 31, -1, 0, 0, 23, 0, 2147483647, 32, 34, 3, 5, 35, 33, 36, 18, 37, 0 </int_array>
+			<int_array  len="150"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 2, 3, -1, 0, 0, 0, 0, 2, 4, -1, 0, 0, 2, 0, 2147483647, 5, 1, 0, 0, 2, 0, 6, 6, -1, 5, 7, 2, 8, 3, 9, 4, 10, 5, 11, 6, 0, 0, 0, 15, 12, -1, 2, 13, 7, 14, 8, 0, 0, 0, 2, 16, -1, 0, 0, 6, 0, 2147483647, 17, 9, 1, 13, 10, 0, 6, 0, 2147483647, 18, 9, 1, 13, 11, 0, 6, 0, 2147483647, 19, 9, 2, 13, 12, 20, 13, 0, 6, 0, 2147483647, 21, 9, 2, 13, 14, 20, 13, 0, 6, 0, 2147483647, 22, 9, 1, 13, 15, 0, 6, 0, 2147483647, 23, 9, 1, 13, 16, 0, 6, 0, 2147483647, 24, 17, 1, 13, 18, 0, 6, 0, 2147483647, 25, 17, 2, 13, 19, 20, 20, 0, 0, 0, 2, 26, -1, 0, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="38" shared="false">
+			<array  len="21" shared="false">
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
 				<resource  external="0">  </resource>
-				<vector2> 154.631, 418.755 </vector2>
-				<real> -24.82296 </real>
-				<vector2> 70.9454, 290.437 </vector2>
-				<vector2> 309.714, 392.677 </vector2>
-				<real> 18.451199 </real>
-				<vector2> 222.028, 299.179 </vector2>
-				<real> 13.452461 </real>
-				<vector2> 364.293, 237.81 </vector2>
-				<vector2> 468.753, 422.09 </vector2>
-				<real> 156.822113 </real>
-				<vector2> 630.544, 410.932 </vector2>
-				<vector2> 517.863, 252.957 </vector2>
-				<real> 23.572962 </real>
-				<vector2> 643.391, 241.799 </vector2>
+				<int> 1 </int>
+				<real> 10 </real>
+				<bool> True </bool>
+				<bool> False </bool>
 				<resource  external="1">  </resource>
-				<vector2> 1000, 300 </vector2>
-				<resource  external="2">  </resource>
-				<real> 5 </real>
 				<vector2> 105.055, 167.593 </vector2>
 				<vector2> 5, 5 </vector2>
-				<resource  external="3">  </resource>
+				<resource  external="2">  </resource>
 				<vector2> -0.0519562, 526.527 </vector2>
 				<vector2> 645.832, 525.576 </vector2>
 				<vector2> -140, 381.7 </vector2>
@@ -95,14 +76,10 @@
 				<vector2> -140, 200 </vector2>
 				<vector2> 256.978, 526.327 </vector2>
 				<vector2> 370, 526.327 </vector2>
-				<resource  external="4">  </resource>
+				<resource  external="3">  </resource>
 				<vector2> -140, 526.282 </vector2>
 				<vector2> -140, 53 </vector2>
 				<real> 270 </real>
-				<resource  external="5">  </resource>
-				<vector2> -301.907, -255.742 </vector2>
-				<resource  external="6">  </resource>
-				<real> 1000000 </real>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
