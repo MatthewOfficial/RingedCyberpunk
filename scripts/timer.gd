@@ -1,8 +1,7 @@
 extends Timer
 
 func _ready():
-	set_fixed_process(true)
-	start()
+	pass
 
 func _on_active_console_console_active():
 	start()
