@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="16" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
-	<ext_resource path="res://gfx/console.png" type="Texture" index="1"></ext_resource>
-	<ext_resource path="res://gfx/empty.png" type="Texture" index="2"></ext_resource>
-	<ext_resource path="res://scripts/active_console.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://scripts/console_color.gd" type="Script" index="3"></ext_resource>
+<resource_file type="PackedScene" subresource_count="12" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
+	<ext_resource path="res://gfx/console.png" type="Texture" index="0"></ext_resource>
+	<ext_resource path="res://gfx/empty.png" type="Texture" index="1"></ext_resource>
 	<resource type="RectangleShape2D" path="local://9">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 16.0283, 10 </vector2>
@@ -49,70 +47,18 @@
 		<vector2_array name="points" len="3"> 			314.292, -76.8269, 285.041, -96.3273, 302.433, -88.6852 </vector2_array>
 
 	</resource>
-	<resource type="Animation" path="local://10">
-		<string name="resource/name"> "Green" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "Sprite:modulate" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<bool name="tracks/0/imported"> False </bool>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "times" </string>
-			<real_array  len="2"> 				0, 0.1 </real_array>
-			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
-			<string> "update" </string>
-			<int> 0 </int>
-			<string> "values" </string>
-			<array  len="2" shared="false">
-				<color> 1, 0.09375, 0.09375, 1 </color>
-				<color> 0, 0.894531, 0.118805, 1 </color>
-			</array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://11">
-		<string name="resource/name"> "Red" </string>
-		<real name="length"> 60 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "Sprite:modulate" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<bool name="tracks/0/imported"> False </bool>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "times" </string>
-			<real_array  len="3"> 				0, 0.1, 10.5 </real_array>
-			<string> "transitions" </string>
-			<real_array  len="3"> 				1, 1, 1 </real_array>
-			<string> "update" </string>
-			<int> 1 </int>
-			<string> "values" </string>
-			<array  len="3" shared="false">
-				<color> 0.291168, 0.428379, 0.792969, 1 </color>
-				<color> 1, 0.09375, 0.09375, 1 </color>
-				<color> 0, 0.894531, 0.118805, 1 </color>
-			</array>
-		</dictionary>
-
-	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 2 </int>
+			<int> 1 </int>
 			<string> "conns" </string>
-			<int_array  len="12"> 				0, 8, 86, 85, 2, 0, 2, 0, 88, 87, 2, 0 </int_array>
+			<int_array  len="6"> 				2, 0, 73, 72, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="89">
+			<string_array  len="74">
 				<string> "active_console" </string>
-				<string> "script/script" </string>
-				<string> "object_scene" </string>
-				<string> "cooldown" </string>
 				<string> "Node2D" </string>
 				<string> "VisibilityEnabler2D" </string>
 				<string> "transform/pos" </string>
@@ -184,33 +130,18 @@
 				<string> "texture" </string>
 				<string> "visibility/behind_parent" </string>
 				<string> "modulate" </string>
-				<string> "AnimationPlayer" </string>
-				<string> "playback/process_mode" </string>
-				<string> "playback/default_blend_time" </string>
-				<string> "root/root" </string>
-				<string> "anims/Green" </string>
-				<string> "anims/Red" </string>
-				<string> "playback/active" </string>
-				<string> "playback/speed" </string>
-				<string> "blend_times" </string>
-				<string> "autoplay" </string>
-				<string> "_on_active_console_console_active" </string>
-				<string> "console_active" </string>
 				<string> "_on_Area2D_area_enter" </string>
 				<string> "area_enter" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 9 </int>
+			<int> 8 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="245"> 				-1, -1, 4, 0, -1, 3, 1, 0, 2, 1, 3, 2, 0, 0, 0, 5, 5, -1, 9, 6, 3, 7, 4, 8, 5, 9, 6, 10, 6, 11, 6, 12, 6, 13, 6, 14, 6, 0, 0, 0, 15, 15, -1, 10, 6, 7, 7, 8, 16, 6, 17, 9, 18, 10, 19, 11, 20, 12, 21, 13, 22, 14, 23, 15, 0, 2, 0, 24, 24, -1, 5, 6, 16, 7, 17, 25, 9, 26, 11, 27, 18, 0, 0, 0, 28, 28, -1, 42, 16, 11, 17, 19, 18, 20, 19, 11, 29, 21, 30, 20, 31, 11, 32, 22, 33, 20, 34, 11, 35, 23, 36, 20, 37, 11, 38, 24, 39, 20, 40, 11, 41, 25, 42, 20, 43, 11, 44, 26, 45, 20, 46, 11, 47, 27, 48, 20, 49, 11, 50, 28, 51, 28, 52, 28, 53, 15, 54, 15, 55, 29, 56, 15, 57, 11, 58, 18, 59, 18, 60, 11, 61, 11, 62, 6, 63, 30, 64, 29, 65, 31, 66, 31, 0, 4, 0, 67, 67, -1, 4, 68, 18, 69, 32, 70, 33, 26, 11, 0, 4, 0, 71, 71, -1, 3, 6, 34, 7, 35, 72, 36, 0, 6, 0, 71, 71, -1, 5, 73, 6, 6, 37, 7, 38, 72, 39, 74, 40, 0, 6, 0, 75, 75, -1, 10, 76, 28, 77, 29, 78, 41, 79, 42, 80, 43, 81, 6, 82, 15, 83, 44, 84, 45, 1, 46, 0 </int_array>
+			<int_array  len="212"> 				-1, -1, 1, 0, -1, 0, 0, 0, 0, 2, 2, -1, 9, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 3, 9, 3, 10, 3, 11, 3, 0, 0, 0, 12, 12, -1, 10, 3, 4, 4, 5, 13, 3, 14, 6, 15, 7, 16, 8, 17, 9, 18, 10, 19, 11, 20, 12, 0, 2, 0, 21, 21, -1, 5, 3, 13, 4, 14, 22, 6, 23, 8, 24, 15, 0, 0, 0, 25, 25, -1, 42, 13, 8, 14, 16, 15, 17, 16, 8, 26, 18, 27, 17, 28, 8, 29, 19, 30, 17, 31, 8, 32, 20, 33, 17, 34, 8, 35, 21, 36, 17, 37, 8, 38, 22, 39, 17, 40, 8, 41, 23, 42, 17, 43, 8, 44, 24, 45, 17, 46, 8, 47, 25, 48, 25, 49, 25, 50, 12, 51, 12, 52, 26, 53, 12, 54, 8, 55, 15, 56, 15, 57, 8, 58, 8, 59, 3, 60, 27, 61, 26, 62, 28, 63, 28, 0, 4, 0, 64, 64, -1, 4, 65, 15, 66, 29, 67, 30, 23, 8, 0, 4, 0, 68, 68, -1, 3, 3, 31, 4, 32, 69, 33, 0, 6, 0, 68, 68, -1, 5, 70, 3, 3, 34, 4, 35, 69, 36, 71, 37, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="47" shared="false">
-				<resource  external="0">  </resource>
-				<nil>  </nil>
-				<real> 5 </real>
+			<array  len="38" shared="false">
 				<vector2> -3.32621, 0.325104 </vector2>
 				<vector2> 3.03749, 2.22648 </vector2>
 				<rect2> -150, -150, 300, 300 </rect2>
@@ -244,18 +175,11 @@
 				<vector2> 0, 7 </vector2>
 				<vector2> -1.85966e-05, -0.000991821 </vector2>
 				<vector2> 0.999997, 1 </vector2>
-				<resource  external="1">  </resource>
+				<resource  external="0">  </resource>
 				<vector2> 33.9528, -209.81 </vector2>
 				<vector2> 92.2499, 43 </vector2>
-				<resource  external="2">  </resource>
-				<color> 0.291168, 0.428379, 0.792969, 1 </color>
-				<node_path> ".." </node_path>
-				<resource  resource_type="Animation" path="local://10">  </resource>
-				<resource  resource_type="Animation" path="local://11">  </resource>
-				<array  len="0" shared="false">
-				</array>
-				<string> "" </string>
-				<resource  external="3">  </resource>
+				<resource  external="1">  </resource>
+				<color> 0.302979, 0.470062, 0.570313, 1 </color>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>

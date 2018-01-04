@@ -7,6 +7,7 @@ var time_left
 var area
 signal start
 var started = false
+var spawned = true
 
 func _ready():
 	area = get_node("Area2D")
@@ -18,6 +19,8 @@ func _ready():
 
 	
 func _fixed_process(delta):
+	yield()
+	print("process start")
 	if (started == false):
 		yield(self, "start")
 	started = true
@@ -33,6 +36,7 @@ func _fixed_process(delta):
 			get_node("../../").add_child(node)
 			
 			time_left = cooldown + rand_range(-0.2,0.5)
+			emit_signal("spawned")
 
 
 
@@ -43,3 +47,13 @@ func _on_Timer_timeout():
 
 func _on_active_console_console_active():
 	emit_signal("start")
+
+
+func _on_selfTimer_timeout():
+	var bodies = area.get_overlapping_bodies()
+	if(bodies.size() == 0):
+		var node = object_scene.instance()
+			
+		node.set_pos(get_pos())
+		node.set_rot(get_rot())
+		get_node("../../").add_child(node)

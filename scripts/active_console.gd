@@ -29,3 +29,6 @@ func _input(event):
 
 func _on_Timer_timeout():
 	print("timer done")
+
+func _on_Area2D_area_enter( area ):
+	pass # replace with function body
